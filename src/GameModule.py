@@ -7,7 +7,8 @@ Created on Wed Oct  7 21:13:28 2020
 """
 
 from copy import deepcopy
-from collections import defaultdict, Set
+from collections import defaultdict
+from collections.abc import Set
 from src.StateModule import StateClass
 
 class GameClass(object):

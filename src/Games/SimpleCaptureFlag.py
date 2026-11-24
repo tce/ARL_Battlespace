@@ -1,6 +1,7 @@
 from src.GameModule import GameClass
 # from StateModule import StateClass
-from collections import defaultdict, Set
+from collections import defaultdict
+from collections.abc import Set
 from src.StateTypes.ExampleState import ExampleStateClass
 from src.UnitTypes.ExampleUnit import ExampleUnit
 from src.UnitTypes.ExampleUnit import FlagClass

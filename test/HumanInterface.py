@@ -275,7 +275,13 @@ def newgame():
     GameOver = False
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     
-    textIn = input('Please provide the IP address of the server, e.g. 71.114.47.132, or press Enter if server and client are on the same machine or router: ')
+    if len(sys.argv) > 1:
+        textIn = sys.argv[1]  # server IP given on the command line
+    else:
+        try:
+            textIn = input('Please provide the IP address of the server, e.g. 71.114.47.132, or press Enter if server and client are on the same machine or router: ')
+        except EOFError:
+            textIn = ''  # no interactive stdin; behave as if Enter was pressed
     if textIn == '':
         external_ip = urllib.request.urlopen('https://ident.me').read().decode('utf8')
         textIn = external_ip

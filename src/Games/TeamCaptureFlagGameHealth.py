@@ -8,7 +8,8 @@ Created on Tue Nov 24 12:23:27 2020
 from copy import deepcopy
 from src.GameModule import GameClass
 # from StateModule import StateClass
-from collections import defaultdict, Set
+from collections import defaultdict
+from collections.abc import Set
 from src.StateTypes.TeamState import TeamStateClass
 from src.UnitTypes.ProjectileModule import ProjectileClass
 from src.UnitTypes.ExampleUnit import ExampleUnit

@@ -48,3 +48,8 @@ htmlcov/
 # Local pickled state (do NOT commit operational pickle files)
 # (Note: existing checked-in *.pkl files are model fixtures and remain tracked.)
 *.tmp.pkl
+
+# In-repo virtualenv (python -m venv .)
+/bin/
+/include/
+/pyvenv.cfg
